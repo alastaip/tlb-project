@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: 5fa97aa1c91ea6a49ba47709e21b8557
+timeCreated: 1487220337
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: bodyLow_CTRL
+    100004: bodyLow_JNT
+    100006: bodyMid_CTRL
+    100008: bodyMid_JNT
+    100010: bodyRoot_JNT
+    100012: camera1
+    100014: catBody
+    100016: controls
+    100018: //RootNode
+    100020: head
+    100022: head_CTRL
+    100024: head_JNT
+    100026: headEnd_JNT
+    100028: leftArmUp_CTRL
+    100030: leftEar
+    100032: leftEar_CTRL
+    100034: leftEarBend_CTRL
+    100036: leftEarEnd_JNT
+    100038: leftEarLow_JNT
+    100040: leftEarUp_JNT
+    100042: leftElbow_CTRL
+    100044: leftFoot_CTRL
+    100046: leftFoot_JNT
+    100048: leftHand_JNT
+    100050: leftKnee_CTRL
+    100052: leftKnee_LOC
+    100054: leftLeg_CTRL
+    100056: leftleg_IK
+    100058: leftLegLower_JNT
+    100060: leftLegUpper_JNT
+    100062: leftLowerArm_JNT
+    100064: leftUpperArm_JNT
+    100066: neck_JNT
+    100068: RightArmUp_CTRL
+    100070: rightEar
+    100072: rightEar_CTRL
+    100074: rightEarBend_CTRL
+    100076: rightEarEnd_JNT
+    100078: rightEarLow_JNT
+    100080: rightEarUp_JNT
+    100082: rightElbow_CTRL
+    100084: rightFoot_CTRL
+    100086: rightFoot_JNT
+    100088: rightHand_JNT
+    100090: rightKnee_CTRL
+    100092: rightKnee_LOC
+    100094: rightLeg_CTRL
+    100096: rightLeg_IK
+    100098: rightLegLower_JNT
+    100100: rightLegUpper_JNT
+    100102: rightLowerArm_JNT
+    100104: rightUpperArm_JNT
+    100106: root_cTRL
+    400000: body
+    400002: bodyLow_CTRL
+    400004: bodyLow_JNT
+    400006: bodyMid_CTRL
+    400008: bodyMid_JNT
+    400010: bodyRoot_JNT
+    400012: camera1
+    400014: catBody
+    400016: controls
+    400018: //RootNode
+    400020: head
+    400022: head_CTRL
+    400024: head_JNT
+    400026: headEnd_JNT
+    400028: leftArmUp_CTRL
+    400030: leftEar
+    400032: leftEar_CTRL
+    400034: leftEarBend_CTRL
+    400036: leftEarEnd_JNT
+    400038: leftEarLow_JNT
+    400040: leftEarUp_JNT
+    400042: leftElbow_CTRL
+    400044: leftFoot_CTRL
+    400046: leftFoot_JNT
+    400048: leftHand_JNT
+    400050: leftKnee_CTRL
+    400052: leftKnee_LOC
+    400054: leftLeg_CTRL
+    400056: leftleg_IK
+    400058: leftLegLower_JNT
+    400060: leftLegUpper_JNT
+    400062: leftLowerArm_JNT
+    400064: leftUpperArm_JNT
+    400066: neck_JNT
+    400068: RightArmUp_CTRL
+    400070: rightEar
+    400072: rightEar_CTRL
+    400074: rightEarBend_CTRL
+    400076: rightEarEnd_JNT
+    400078: rightEarLow_JNT
+    400080: rightEarUp_JNT
+    400082: rightElbow_CTRL
+    400084: rightFoot_CTRL
+    400086: rightFoot_JNT
+    400088: rightHand_JNT
+    400090: rightKnee_CTRL
+    400092: rightKnee_LOC
+    400094: rightLeg_CTRL
+    400096: rightLeg_IK
+    400098: rightLegLower_JNT
+    400100: rightLegUpper_JNT
+    400102: rightLowerArm_JNT
+    400104: rightUpperArm_JNT
+    400106: root_cTRL
+    4300000: leftEar
+    4300002: head
+    4300004: body
+    4300006: rightEar
+    7400000: idle
+    9500000: //RootNode
+    13700000: body
+    13700002: head
+    13700004: leftEar
+    13700006: rightEar
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: camera1
+        weight: 1
+      - path: catBody
+        weight: 1
+      - path: catBody/body
+        weight: 1
+      - path: catBody/head
+        weight: 1
+      - path: catBody/leftEar
+        weight: 1
+      - path: catBody/rightEar
+        weight: 1
+      - path: controls
+        weight: 1
+      - path: controls/root_cTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/head_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/head_CTRL/leftEar_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/head_CTRL/leftEar_CTRL/leftEarBend_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/head_CTRL/rightEar_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/head_CTRL/rightEar_CTRL/rightEarBend_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/leftArmUp_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/leftArmUp_CTRL/leftElbow_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/RightArmUp_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyLow_CTRL/bodyMid_CTRL/RightArmUp_CTRL/rightElbow_CTRL
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT/leftEarLow_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT/leftEarLow_JNT/leftEarUp_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT/leftEarLow_JNT/leftEarUp_JNT/leftEarEnd_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT/rightEarLow_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT/rightEarLow_JNT/rightEarUp_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/head_JNT/headEnd_JNT/rightEarLow_JNT/rightEarUp_JNT/rightEarEnd_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/leftUpperArm_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/leftUpperArm_JNT/leftLowerArm_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/leftUpperArm_JNT/leftLowerArm_JNT/leftHand_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/rightUpperArm_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/rightUpperArm_JNT/rightLowerArm_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/bodyLow_JNT/bodyMid_JNT/neck_JNT/rightUpperArm_JNT/rightLowerArm_JNT/rightHand_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/leftLegUpper_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/leftLegUpper_JNT/leftLegLower_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/leftLegUpper_JNT/leftLegLower_JNT/leftFoot_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/rightLegUpper_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/rightLegUpper_JNT/rightLegLower_JNT
+        weight: 1
+      - path: controls/root_cTRL/bodyRoot_JNT/rightLegUpper_JNT/rightLegLower_JNT/rightFoot_JNT
+        weight: 1
+      - path: controls/root_cTRL/leftLeg_CTRL
+        weight: 1
+      - path: controls/root_cTRL/leftLeg_CTRL/leftKnee_CTRL
+        weight: 1
+      - path: controls/root_cTRL/leftLeg_CTRL/leftKnee_CTRL/leftFoot_CTRL
+        weight: 1
+      - path: controls/root_cTRL/leftLeg_CTRL/leftKnee_CTRL/leftFoot_CTRL/leftKnee_LOC
+        weight: 1
+      - path: controls/root_cTRL/leftleg_IK
+        weight: 1
+      - path: controls/root_cTRL/rightLeg_CTRL
+        weight: 1
+      - path: controls/root_cTRL/rightLeg_CTRL/rightKnee_CTRL
+        weight: 1
+      - path: controls/root_cTRL/rightLeg_CTRL/rightKnee_CTRL/rightFoot_CTRL
+        weight: 1
+      - path: controls/root_cTRL/rightLeg_CTRL/rightKnee_CTRL/rightFoot_CTRL/rightKnee_LOC
+        weight: 1
+      - path: controls/root_cTRL/rightLeg_IK
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
