@@ -79,6 +79,11 @@ public class PlayerController : MonoBehaviour {
             }
         }
         #endregion
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Interact();
+        }
     }
 
     void ApplyEnvironment()
@@ -105,5 +110,20 @@ public class PlayerController : MonoBehaviour {
     {
         anim.SetBool("isGrounded", controller.isGrounded);
         anim.SetFloat("moveSpeed", (Mathf.Abs(Input.GetAxis("Vertical")) + (Mathf.Abs(Input.GetAxis("Horizontal")))));
+    }
+
+    void Interact()
+    {
+        
+            Debug.Log("I'm interacting!");
+        
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "InteractZone")
+        {
+            Debug.Log (other.transform.name);
+        }   
     }
 }

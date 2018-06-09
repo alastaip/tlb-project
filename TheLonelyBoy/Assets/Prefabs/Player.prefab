@@ -508,6 +508,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1562900671742562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4423777558058194}
+  - component: {fileID: 135952398239450760}
+  m_Layer: 0
+  m_Name: Interact Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1596931716846844
 GameObject:
   m_ObjectHideFlags: 1
@@ -780,7 +796,7 @@ GameObject:
   - component: {fileID: 143548288700348110}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1138,6 +1154,19 @@ Transform:
   - {fileID: 4393008236377948}
   m_Father: {fileID: 4870898069288718}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4423777558058194
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562900671742562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.3879929, y: 3.3879938, z: 3.3879938}
+  m_Children: []
+  m_Father: {fileID: 4885301035507160}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4428857024279100
 Transform:
@@ -1523,10 +1552,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1822163981876270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 4.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4048863942916008}
+  - {fileID: 4423777558058194}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1674,14 +1704,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd6f00ac43bf7743b0ec36b4f4937a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 30
-  gravityScale: 0.15
-  pivot: {fileID: 0}
-  rotateSpeed: 25
   playerModel: {fileID: 1245765345453522}
-  projectile: {fileID: 1336480996522766, guid: d33687153339a4e4ca4f21da23f756a0, type: 2}
-  shootPoint: {fileID: 4603492748447288}
+  fMoveSpeed: 4
+  fJumpForce: 20
+  fGravity: 0.15
+  pivot: {fileID: 0}
+  fRotateSpeed: 25
+--- !u!135 &135952398239450760
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562900671742562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136858044188985548
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1690,7 +1730,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1822163981876270}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -1927,5 +1967,5 @@ CharacterController:
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.0001
-  m_MinMoveDistance: 0.001
+  m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
