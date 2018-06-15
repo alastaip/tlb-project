@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
     #region GameObjects
+    private PlayerController player;
     public GameObject playerModel;
     private CharacterController controller;
     private Vector3 moveDirection;
     private Animator anim;
+    public GameObject interactingObject;
+    public Vector3 interactingObjectCenter;
+    private bool canInteract;
     #endregion
 
     #region MovementVars
@@ -19,13 +24,16 @@ public class PlayerController : MonoBehaviour {
     public float fRotateSpeed;  //25
     #endregion
 
-    void Start ()
+    void Start()
     {
+        player = GetComponent<PlayerController>();
         controller = GetComponent<CharacterController>();
         anim = GetComponentInChildren<Animator>();
-	}
-	
-	void Update () {
+        canInteract = false;
+    }
+
+    void Update()
+    {
         CheckDeath();
 
         ResetState();
@@ -80,9 +88,12 @@ public class PlayerController : MonoBehaviour {
         }
         #endregion
 
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && canInteract)
         {
             Interact();
+            interactingObject = null;
+            interactingObjectCenter = Vector3.zero;
+            canInteract = false;
         }
     }
 
@@ -114,16 +125,26 @@ public class PlayerController : MonoBehaviour {
 
     void Interact()
     {
-        
-            Debug.Log("I'm interacting!");
-        
+
+        Debug.Log("I'm interacting!");
+        player.transform.position = interactingObjectCenter;
+
+
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "InteractZone")
         {
-            Debug.Log (other.transform.name);
-        }   
+            canInteract = true;
+            Debug.Log(other.transform.name);
+            interactingObject = other.gameObject;
+            interactingObjectCenter = other.gameObject.transform.TransformPoint(other.GetComponent<CapsuleCollider>().center);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        canInteract = false;
     }
 }
